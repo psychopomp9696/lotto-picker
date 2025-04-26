@@ -1,0 +1,60 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  font-family: 'Noto Sans', 'Arial', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Noto Sans Rounded', 'Arial', sans-serif;
+}
+
+.menu {
+  margin-left: 15px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+main {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#dice {
+  font-size: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#dice.hold {
+  transform: scale(1.5);
+}
+
+.ball {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
