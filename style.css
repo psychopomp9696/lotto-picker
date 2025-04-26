@@ -31,7 +31,7 @@ hr {
 
 main {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 #dice {
@@ -43,7 +43,17 @@ main {
 }
 
 #dice.hold {
-  transform: scale(1.5);
+  animation: bounce 1s ease;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-100px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-50px); }
+  80% { transform: translateY(0); }
+  90% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }
 
 .ball {
