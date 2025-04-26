@@ -1,12 +1,12 @@
 const diceButton = document.getElementById('dice');
 const lottoNumbersDiv = document.querySelector('.lotto-numbers');
 
-diceButton.addEventListener('mousedown', () => {
-  diceButton.classList.add('hold');
+diceButton.addEventListener('click', () => {
+  diceButton.classList.add('throwing');
 });
 
-diceButton.addEventListener('mouseup', () => {
-  diceButton.classList.remove('hold');
+diceButton.addEventListener('animationend', () => {
+  diceButton.classList.remove('throwing');
   generateNumbers();
 });
 

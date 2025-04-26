@@ -42,18 +42,18 @@ main {
   transition: transform 0.2s ease;
 }
 
-#dice.hold {
-  animation: bounce 1s ease;
+#dice.throwing {
+  animation: throwDice 1s ease forwards;
 }
 
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  20% { transform: translateY(-100px); }
-  40% { transform: translateY(0); }
-  60% { transform: translateY(-50px); }
-  80% { transform: translateY(0); }
-  90% { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+@keyframes throwDice {
+  0% { transform: translateY(0) rotate(0deg); }
+  20% { transform: translateY(-100px) rotate(180deg); }
+  40% { transform: translateY(0) rotate(360deg); }
+  60% { transform: translateY(-50px) rotate(540deg); }
+  80% { transform: translateY(0) rotate(720deg); }
+  90% { transform: translateY(-20px) rotate(810deg); }
+  100% { transform: translateY(0) rotate(900deg); }
 }
 
 .ball {
